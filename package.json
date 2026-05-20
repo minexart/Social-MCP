@@ -1,0 +1,29 @@
+{
+  "name": "social-mcp",
+  "version": "0.1.0",
+  "description": "An MCP server for drafting, scheduling, and publishing social media posts via AI",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "auth:linkedin": "tsx scripts/auth-linkedin.ts",
+    "test": "vitest run"
+  },
+  "keywords": ["mcp", "model-context-protocol", "claude", "social-media", "linkedin"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  }
+}
